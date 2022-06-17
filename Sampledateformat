@@ -1,0 +1,11 @@
+        long now = System.currentTimeMillis();
+        Date currTime = new Date(now);
+
+        SimpleDateFormat date = new SimpleDateFormat("yyyy/MM/dd E");
+        SimpleDateFormat time = new SimpleDateFormat("hh시 mm분 a");
+
+        String getTime = date.format(currTime);
+        String getDate = time.format(currTime);
+        
+        editDate.setText("date: "+ date.format(currTime));
+        editTime.setText("Time: " + time.format(currTime));
